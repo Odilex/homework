@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+    background-color:#0F0F0F;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    border-bottom:  0.5px solid lightgray;
+    
+}
+
+footer{
+    background-color: rgb(22, 24, 27);
+    height: 100px;
+}
+.col-sm-6 img {
+    padding: 5px;
+    width: 100px;
+    height: 80px;
+}
+button{
+    border: none;
+    background-color: #A27B5C;
+    border-radius: 20px;
+    
+    margin-top: 20px;
+
+}
+button:hover{
+    background-color: #775c45;
+    padding: -4px;
+}
+button a {
+    text-decoration: none;
+    color: black;
+   
+}
+button a:hover {
+    text-decoration: none;
+    color: black;
+}
+h2{
+    font-size: 50px;
+    margin-top: 30px;
+}
+p{
+    font-size: 20px;
+}
+H3{
+    font-size: 15PX;
+}
+.bg-light {
+    background-color: rgb(12, 12, 12);
+}
+@media (prefers-reduced-motion: no-preference ){}
+.services,.portfolio {
+    scale: .8; opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry 100px;
+}
+@keyframes fade-in{
+    to{scale: 1; opacity: 1;}
+    
+}
